@@ -1,0 +1,9 @@
+1    Unable to connect to libvirt qemu:///system.
+
+    Socket-Erstellung zu '/var/run/libvirt/virtqemud-sock' fehlgeschlagen: Datei oder Verzeichnis nicht gefunden
+
+systemctl enable --now libvirtd
+
+2    Use virt-manager without root
+
+sudo usermod -a -G libvirt $(whoami)
